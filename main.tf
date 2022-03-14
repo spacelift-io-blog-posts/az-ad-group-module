@@ -9,7 +9,7 @@ terraform {
       version = ">=2.95.0"
     }
     azuread = {
-      source  = "hashicorp/azuread"
+      source = "hashicorp/azuread"
     }
   }
   backend "azurerm" {
@@ -21,6 +21,6 @@ terraform {
 }
 
 module "ad_group" {
-  source = "./ad_group"
+  source         = "./ad_group"
   ad_group_names = var.ad_group_names
 }
